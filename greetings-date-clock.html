@@ -3,13 +3,15 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Bebas+Neue" rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>greeting2</title>
 
     <style>
+        @font-face {
+            font-family: gi;
+            src: url('f/zh-cn.ttf');
+        }
         /*CSS RESETS*/
 
         body {
@@ -80,9 +82,9 @@
         .greet {
 
             display: inline;
-            font-family: 'Dancing Script', cursive;
-            font-size: 25px;
-            line-height: 25px;
+            font-family: 'gi', cursive;
+            font-size: 20px;
+            line-height: 20px;
         }
     </style>
 </head>
@@ -128,7 +130,7 @@
             }
             hrs = today.getHours();
             if (hrs < 12)
-                greet = 'Well are those who rise in the early morn, while those late to bed I shall forewarn~  ';
+                greet = 'Well are those who rise in the early morn, while those late to bed I shall forewarn...  ';
             else if (hrs >= 12 && hrs <= 17)
                 greet = 'Yo! Afternoon! ';
             else if (hrs >= 17 && hrs <= 24)
